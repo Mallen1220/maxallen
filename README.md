@@ -1,2 +1,3 @@
-# maxallen
-Repo for my personal website: www.maxallen.me
+# My Personal Website
+
+Live at [maxallen.me](maxallen.me)
