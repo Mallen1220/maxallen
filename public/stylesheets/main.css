@@ -4,6 +4,30 @@
   
 }
 
+.container {
+  position: relative;
+}
+
 body {
   margin: 0px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  position: absolute;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#maxallen {
+  font-size: 100px;
+  margin: auto;
 }

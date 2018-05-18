@@ -9,7 +9,7 @@ var maxLife = 10;
 var	simulationSpeed = 0.2;
 var fadeFrame = 0;
 var backgroundColor;
-var visualMode = 0;
+var visualMode = 3;
 var numModes = 4;
 var invertColors = false;
 
@@ -138,11 +138,12 @@ function Particle(){
 
 function advanceVisual()
 {
+    return;
 	visualMode = ++visualMode % numModes;
-	if(visualMode == 0){
-		invertColors = !invertColors;
-		backgroundColor = invertColors ? color(235, 235, 235) : color(20, 20, 20);
-	}
+	// if(visualMode == 0){
+	// 	invertColors = !invertColors;
+	// 	backgroundColor = invertColors ? color(235, 235, 235) : color(20, 20, 20);
+	// }
 	noiseSeed(random()*Number.MAX_SAFE_INTEGER);
 	background(backgroundColor);
 	for(var i = 0; i < nums; i++){
