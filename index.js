@@ -7,6 +7,7 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: true
 });
+const app = express()
 
 app.get('/db', async (req, res) => {
   try {
@@ -20,8 +21,7 @@ app.get('/db', async (req, res) => {
   }
 });
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
