@@ -16,7 +16,8 @@ var invertColors = false;
 function setup(){
 	nums = windowWidth * windowHeight / particleDensity;
 	backgroundColor = color(20, 20, 20);
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent('sketch')
 	background(backgroundColor);
 	for(var i = 0; i < nums; i++){
 		particles[i] = new Particle();
