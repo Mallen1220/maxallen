@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# Annoying Mac Things
+*.DS_Store

@@ -45,4 +45,5 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  flex-direction: column
 }
